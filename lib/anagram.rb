@@ -17,6 +17,7 @@ class Anagram
           array_match << w.split("")
             array_match.each do |i|
               if i.sort == word_array.sort
+                binding.pry
                 @match << i
               end
             end
@@ -24,7 +25,6 @@ class Anagram
           end
         end
     @match.join("")
-    binding.pry
   end
 end
 
