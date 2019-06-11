@@ -21,7 +21,7 @@ class Anagram
                 @match << i.sort.join("")
               end
             end
-            
+
           end
         end
   end
