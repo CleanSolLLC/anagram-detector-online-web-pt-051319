@@ -18,7 +18,7 @@ class Anagram
             array_match.each do |i|
               if i.sort == word_array.sort
                 binding.pry
-                @match << i
+                @match << i.sort.join("")
               end
             end
           @match = []
