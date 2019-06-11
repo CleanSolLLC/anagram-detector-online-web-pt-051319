@@ -16,7 +16,7 @@ class Anagram
         #if length of word == length of word in array
         #possible anagram
         if w.length == @word.length
-          
+
           word_array = @word.split("")
           binding.pry
           array_match << w.split("")
