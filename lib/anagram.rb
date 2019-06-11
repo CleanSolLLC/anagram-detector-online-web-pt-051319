@@ -18,13 +18,13 @@ class Anagram
             array_match.each do |i|
               if i.sort == word_array.sort
                 @match << i
-                binding.pry
               end
             end
           @match = []
           end
         end
-    @match
+    @match.join("")
+    binding.pry
   end
 end
 
