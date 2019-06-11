@@ -17,6 +17,7 @@ class Anagram
         if w.length == @word.length
           if w.split("").sort  == @word.split("").sort
               @match << w
+              binding.pry
           end
         end
       end
