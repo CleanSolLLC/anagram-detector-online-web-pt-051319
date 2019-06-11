@@ -9,25 +9,17 @@ class Anagram
   end
 
   def match(array)
-    array_match = []
-    word_array = []
+    @match = []
     #iterate over array conating strings
     array.each do |w|
         #if length of word == length of word in array
         #possible anagram
         if w.length == @word.length
-
-          word_array = @word.split("")
-          binding.pry
-          array_match << w.split("")
-            array_match.each do |i|
-              if i.sort == word_array.sort
-                @match << i.sort.join("")
-              end
-            end
-
+          if w.split("").sort  == @word.split("").sort
+              @match << w
           end
         end
+      end
   end
 end
 
